@@ -5,21 +5,21 @@
 }
 
 :root{
-    --tarjeta: rgb(255, 255, 255);
-    --fuente: #ffffff;
-    --bgBtn: rgb(135, 141, 214);
+    --tarjeta: rgb(230, 227, 227);
+    --fuente: #e7e1e1;
+    --bgBtn: #1c88e0;
 }
 
 body{
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1c88e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c88e0, #4f4ff3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c88e0, #4f4ff3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .quirofanos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 96%;
+    width: 90%;
     margin: auto;
 }
 
@@ -58,4 +58,135 @@ body{
 
 .tarjeta img{   
     width: 10em;
+}
+
+@media (max-width: 920px) {
+    .quirofanos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+
+@media (max-width: 830px) {
+    .quirofanos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 6em;
+    }
+}
+
+@media (max-width: 750px) {
+    .quirofanos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+@media (max-width: 600px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 8em;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 6em;
+    }
+}
+
+@media (max-width: 430px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quirofanos{
+        width: 90%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 5em;
+    }
+}
+
+@media (max-width: 380px) {
+    .quirofanos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+@media (max-width: 280px) {
+    .quirofanos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tarjeta{
+        width: 80%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 5em;
+    }
 }
