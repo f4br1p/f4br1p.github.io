@@ -3,14 +3,14 @@
 :root{
     --tarjeta: rgb(235, 235, 235);
     --fuente: #272424;
-    --bgBtn: #4949dd;
+    --bgBtn: #5053fa;
     --bgInput: #d6dbe2; 
 }
 
 body{
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1c88e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c88e0, #4f4ff3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c88e0, #4f4ff3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 *{
@@ -51,7 +51,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background-color: #2e4cd3;
+    background-color: #294dec;
     color: white;
     transition: 0.4s;
 }
