@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Web/css/quirofano.css">
+    <title>Quirófano</title>
+</head>
+<body>
+  <nav class="navbar navbar-white bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Web/index.html">Hospital de Nahuel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hospital de Nahuel</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/Web/secciones/login.html">Administrador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Web/secciones/login.html">Enfermero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Web/secciones/login.html">Médico</a>
+            </li>
+            <!--<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>-->
+            </li>
+          </ul><!--
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+    </div>
+  </nav>
+<br><br><br><br>
+      
+      <section id="enfermeros">
+        <h3>Quirófano X</h3>
+        <table>
+            <tr>
+                <td class="titulo">Enfermero</td>
+                <td class="titulo">Localización</td>
+                <td class="titulo">Disponible</td>
+            </tr>
+            <tr class="fila">
+                <td>Enfermero López</td>
+                <td>Planta Baja</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Enfermero Ramírez</td>
+                <td>Planta Baja</td>
+                <td><a>No</a></td>
+            </tr>
+            <tr class="fila">
+                <td>Enfermero Lezcano</td>
+                <td>Segundo Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Enfermero Medina</td>
+                <td>Primer Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr class="fila">
+              <td>Enfermero Durand</td>
+              <td>Primer Piso</td>
+              <td><a>No</a></td>
+          </tr>
+        </table>
+      </section>
+
+      <br><br>
+
+      <section id="camilleros">
+        <table>
+            <tr>
+                <td class="titulo">Personal de Traslado</td>
+                <td class="titulo">Localización</td>
+                <td class="titulo">Disponible</td>
+            </tr>
+            <tr class="fila">
+                <td>López</td>
+                <td>Planta Baja</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Ramírez</td>
+                <td>Planta Baja</td>
+                <td><a>No</a></td>
+            </tr>
+            <tr class="fila">
+                <td>Lezcano</td>
+                <td>Segundo Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Medina</td>
+                <td>Primer Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr class="fila">
+              <td>Durand</td>
+              <td>Primer Piso</td>
+              <td><a>No</a></td>
+          </tr>
+        </table>
+      </section>
+
+      <br><br>
+
+      <section id="medico">
+        <table>
+            <tr>
+                <td class="titulo">Médico</td>
+                <td class="titulo">Localización</td>
+                <td class="titulo">Disponible</td>
+            </tr>
+            <tr class="fila">
+                <td>Médico López</td>
+                <td>Planta Baja</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Médico Ramírez</td>
+                <td>Planta Baja</td>
+                <td><a>No</a></td>
+            </tr>
+            <tr class="fila">
+                <td>Médico Lezcano</td>
+                <td>Segundo Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr>
+                <td>Médico Medina</td>
+                <td>Primer Piso</td>
+                <td><a href="">Llamar</a></td>
+            </tr>
+            <tr class="fila">
+              <td>Médico Durand</td>
+              <td>Primer Piso</td>
+              <td><a>No</a></td>
+          </tr>
+        </table>
+      </section>
+</body>
+</html>

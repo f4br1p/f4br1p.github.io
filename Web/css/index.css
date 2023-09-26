@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --tarjeta: rgb(230, 227, 227);
+    --fuente: #e7e1e1;
+    --bgBtn: #1c88e0;
+}
+
+body{
+    background: #1c88e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c88e0, #4f4ff3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c88e0, #4f4ff3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.quirofanos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.ambulancias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    margin: 2em;
+    color: var(--fuente);
+}
+
+.tarjeta{
+    box-shadow: 0px 1px 13px #ece7e7;
+    margin: auto;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    width: fit-content;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--tarjeta);
+    color: #000000;
+}
+
+.tarjeta:hover{
+    transition: .4s;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px;
+}
+
+.tarjeta button{
+    border: none;
+    padding: .5em;
+    border-radius: 0.4em;
+    color: #ffff;
+    background-color: var(--bgBtn);
+}
+
+.tarjeta button:hover{
+    background-color: #5476e6;
+    transition: 0.4s;
+}
+
+.tarjeta img{   
+    width: 10em;
+}
+
+@media (max-width: 970px) {
+    .quirofanos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .ambulancias{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 6em;
+    }
+}
+
+@media (max-width: 920px) {
+    .quirofanos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+@media (max-width: 830px) {
+    .quirofanos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 6em;
+    }
+}
+
+@media (max-width: 750px) {
+    .quirofanos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+@media (max-width: 600px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ambulancias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .7em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 8em;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .ambulancias{
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 6em;
+    }
+}
+
+@media (max-width: 430px) {
+    .quirofanos{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .ambulancias{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 5em;
+    }
+}
+
+@media (max-width: 380px) {
+    .quirofanos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ambulancias{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 7em;
+    }
+}
+
+@media (max-width: 280px) {
+    .quirofanos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ambulancias{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .tarjeta{
+        width: 80%;
+    }
+
+    .tarjeta button{
+        padding: .4em;
+        margin-top: .7em;
+    }
+
+    .tarjeta img{   
+        width: 5em;
+    }
+}
