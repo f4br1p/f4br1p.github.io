@@ -13,6 +13,10 @@ body{
     background: linear-gradient(to right, #1c88e0, #4f4ff3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: 'Inter', sans-serif;
 }
