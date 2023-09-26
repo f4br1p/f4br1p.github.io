@@ -45,3 +45,30 @@ table{
 a{
     text-decoration: none;
 }
+
+@media (max-width: 500px){
+    .titulo{
+        width: fit-content;
+    }
+}
+
+@media (max-width: 380px){
+    .titulo{
+        width: fit-content;
+    }
+
+    table{
+        font-size: small;
+    }
+}
+
+@media (max-width: 360px){
+    .titulo{
+        width: fit-content;
+    }
+
+    table{
+        margin: auto;
+        font-size: small;
+    }
+}
