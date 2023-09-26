@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root{
-    --tarjeta: rgb(81, 121, 255);
-    --fuente: #3f3f3f;
-    --bgBtn: #f3f3fa;
+    --tarjeta: rgb(235, 235, 235);
+    --fuente: #272424;
+    --bgBtn: #4949dd;
+    --bgInput: #d6dbe2; 
 }
 
 body{
@@ -34,6 +35,7 @@ input{
     margin-bottom: 1em;
     font-size: 1em;
     border-radius: 0.4em;
+    background-color: var(--bgInput);
 }
 
 h1{
@@ -44,8 +46,8 @@ h1{
 
 input[type="submit"]{
     width: 100%;
-    background-color: #ffffff;
-    
+    background-color: var(--bgBtn);
+    color: var(--bgInput);
 }
 
 input[type="submit"]:hover{
@@ -56,7 +58,7 @@ input[type="submit"]:hover{
 
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--bgBtn);
 }
 
 a:hover{
@@ -66,7 +68,7 @@ a:hover{
 
 legend{
     font-size: .9em;
-    color: #dfdfe7;
+    color: var(--fuente);
 }
 
 p{
@@ -74,5 +76,5 @@ p{
 }
 
 p a{
-    color: #c9cde2;
+    color: #858585;
 }
