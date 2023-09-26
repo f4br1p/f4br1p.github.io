@@ -6,6 +6,10 @@
     --bgBtn: #ffffff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #1c88e0;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1c88e0, #4f4ff3);  /* Chrome 10-25, Safari 5.1-6 */

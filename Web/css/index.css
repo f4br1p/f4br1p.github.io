@@ -4,6 +4,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --tarjeta: rgb(230, 227, 227);
     --fuente: #e7e1e1;
