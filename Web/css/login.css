@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --tarjeta: rgb(81, 121, 255);
+    --fuente: #3f3f3f;
+    --bgBtn: #f3f3fa;
+}
+
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+#login{
+    background-color: var(--tarjeta);
+    padding: 3em;
+    border: none;
+    border-radius: 1em;
+    margin: auto;
+    width: fit-content;
+    margin-top: 4em;
+    box-shadow: 2px 3px 5px;
+    color: var(--bgBtn);
+}
+
+input{
+    border: none;
+    padding: .8em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    border-radius: 0.4em;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: #2e4cd3;
+    color: white;
+    transition: 0.4s;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    color: #333333;
+    transition: 0.3s;
+}
+
+legend{
+    font-size: .9em;
+    color: #dfdfe7;
+}
+
+p{
+    text-align: center;
+}
+
+p a{
+    color: #c9cde2;
+}
