@@ -21,32 +21,6 @@ html{
     font-family: 'Inter', sans-serif;
 }
 
-#inicio a{
-    text-decoration: none;
-    font-weight: 700;
-    font-size: small;
-    color: var(--fuente);
-    text-align: center;
-}
-
-#inicio a:hover{
-    color: var(--bgInput);
-}
-
-#inicio{
-    padding: .5em;
-    padding-inline: 1em;
-    border: none;
-    border-radius: .2em;
-    background-color: var(--bgInput);
-}
-
-#inicio:hover{
-    background: #1c32ac;
-    transition: .4s;
-    color: var(--bgInput);
-}
-
 #login{
     background-color: var(--tarjeta);
     padding: 3em;
