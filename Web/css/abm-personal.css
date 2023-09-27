@@ -33,8 +33,8 @@ form{
 legend{
     font-family: "Inter";
     font-size: 3rem;
-    align-items: center;
     font-weight: 600;
+    align-items: center;
 }
 
 .info{
@@ -50,10 +50,17 @@ input{
     display: grid;
 }
 
+select{
+    display: grid;
+    margin-top: 0.4rem;
+    height: 30px
+}
+
 .botones{
     margin: 0.7rem 0 0.7rem 0;
     display: flex;
     justify-content: left;
+    padding: 0.7rem 0 0.4rem 0;
 }
 
 .btn{

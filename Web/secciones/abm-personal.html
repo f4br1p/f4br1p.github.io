@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Web/css/abm-personal.css">
+    <title>Gestión de empleados</title>
+</head>
+<body>
+  <nav class="navbar navbar-white bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Web/index.html">Hospital de Nahuel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Hospital de Nahuel</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/Web/secciones/login.html">Administrador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Web/secciones/login.html">Enfermero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Web/secciones/login.html">Médico</a>
+            </li>
+            <!--<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>-->
+            </li>
+          </ul><!--
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br><br>
+
+  <section>
+    <form method="post">
+        <fieldset>
+            <legend>Información del empleado:</legend>
+            <div class="info">
+                <label>Nombre:</label><input type="text" lang="es"><br>
+                <label>DNI:</label><input type="text" lang="es"><br>
+                <label>Ocupación:</label><select name="personal" id="personal">
+                    <option value="" disabled selected>- Selecciona una opción -</option>
+                    <option value="med">Médico</option>
+                    <option value="enf">Enfermero</option>
+                    <option value="p-t">Personal de traslado</option>
+                </select><br>
+                <div class="esp" id="especialidad">
+                    <label>Especialidad:</label><select name="especialista" id="especialista">
+                        <option value="" disabled selected>- Selecciona una opción -</option>
+                        <option value="e1">Especialidad 1</option>
+                        <option value="e2">Especialidad 2</option>
+                        <option value="e3">Especialidad 3</option>
+                    </select>
+                </div>
+                <label>Quirófano asignado:</label><select name="quirofano" id="quirofano">
+                    <option value="" disabled selected>- Selecciona una opción -</option>
+                    <option value="q1">Quirófano X</option>
+                    <option value="q2">Quirófano X</option>
+                    <option value="q3">Quirófano X</option>
+                </select>
+            </div>
+
+            <div class="botones">
+                <button class="btn" type="submit">Actualizar</button>
+                <button class="btn">Eliminar</button>
+                <button class="btn">Buscar</button>
+            </div>
+
+            <p>Ingrese un número de DNI para buscar personal.</p>
+        </fieldset>
+    </form>
+  </section>
+
+  <!-- Script para mostrar la selección de especialidad únicamente cuando se selecciona la ocupación "Médico" -->
+  <script>
+    const seleccion = document.getElementById('personal');
+
+    const especialidad = document.getElementById('especialidad');
+
+    especialidad.style.display = 'none'
+
+    seleccion.addEventListener('change', function handleChange(event) {
+        if (event.target.value === 'med') {
+            especialidad.style.display = 'block';
+        } else {
+            especialidad.style.display = 'none';
+        }
+    });
+  </script>
+</body>
+</html>
