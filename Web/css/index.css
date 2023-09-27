@@ -122,6 +122,10 @@ h2{
     height: 10em;
 }
 
+#alerta-azul{
+    background-color: #d44215;
+}
+
 @media (max-width: 970px) {
     .quirofanos{
         grid-template-columns: repeat(3, 1fr);
