@@ -27,6 +27,13 @@ body{
     margin: auto;
 }
 
+.seleccion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
 .ambulancias{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -54,7 +61,27 @@ h2{
     color: #000000;
 }
 
+.card{
+    box-shadow: 0px 1px 13px #ece7e7;
+    margin: auto;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    width: fit-content;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--tarjeta);
+    color: #000000;
+}
+
 .tarjeta:hover{
+    transition: .4s;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px;
+}
+
+.card:hover{
     transition: .4s;
     transform: scale(1.02);
     box-shadow: 0px 4px 10px;
@@ -75,6 +102,28 @@ h2{
 
 .tarjeta img{   
     width: 10em;
+}
+
+.card button{
+    border: none;
+    padding: .5em;
+    border-radius: 0.4em;
+    color: #ffff;
+    background-color: var(--bgBtn);
+}
+
+.card button:hover{
+    background-color: #5476e6;
+    transition: 0.4s;
+}
+
+.card img{   
+    width: 10em;
+    height: 10em;
+}
+
+#alerta-azul{
+    background-color: #d44215;
 }
 
 @media (max-width: 970px) {

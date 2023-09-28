@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #1c88e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c88e0, #4f4ff3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c88e0, #4f4ff3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: var(--bgBtn);
+}
+
+form{
+    background-color: #fff;
+    width:50%;
+    margin: auto;
+    border-radius: 25px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    padding: 1.5em
+}
+
+legend{
+    font-family: "Inter";
+    font-size: 3rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.info{
+    justify-content: center;
+}
+
+label{
+    font-family: "Inter";
+    font-size: 120%;
+}
+
+input{
+    display: grid;
+}
+
+select{
+    display: grid;
+    margin-top: 0.4rem;
+    height: 30px
+}
+
+.botones{
+    margin: 0.7rem 0 0.7rem 0;
+    display: flex;
+    justify-content: left;
+    padding: 0.7rem 0 0.4rem 0;
+}
+
+.btn{
+    margin-right: 1rem;
+    padding: 1vh 2vh 1vh 2vh;
+    border: 0;
+    background-color: #1c88e0;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #69bcff;
+    color: #fff;
+    transition: 0.5s
+}

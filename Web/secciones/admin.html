@@ -7,13 +7,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="css/index.css">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="/Web/css/index.css">
+    <title>Administrador</title>
 </head>
 <body>
     <nav class="navbar navbar-white bg-white fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="/Web/img/hospital.png" alt="..." style="width: 1.7em;"></a>
+          <a class="navbar-brand" href="/Web/secciones/admin.html"><img src="/Web/img/hospital.png" alt="..." style="width: 1.7em;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,14 +25,9 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/Web/secciones/login.html">Administrador</a>
+                  <a class="nav-link" aria-current="page" href="/Web/secciones/abm.html">Alta, Baja y Modificación</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="secciones/login.html">Enfermero</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="secciones/login.html">Médico</a>
-                </li>
+                
                 <!--<li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
@@ -46,43 +41,75 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>-->
                 </li>
-              </ul><!--
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>-->
+              </ul>
             </div>
           </div>
         </div>
       </nav>
       <br><br>
-      <h2>Seleccione su función</h2>
+      <h2>Quirófanos</h2>
       <section class="quirofanos">
         <div class="tarjeta">
-            <img src="img/asistente-medico.png" alt=""><br>
-            <span>Enfermero</span><br>
-            <a href="secciones/login.html"><button>Ingresar</button></a>
+            <img src="/Web/img/quirofano.png" alt=""><br>
+            <span>Quirófano N°</span><br>
+            <a href="/Web/secciones/quirofano.html"><button>Ingresar</button></a>
+        </div>  
+        
+        <div class="tarjeta" id="alerta-azul">
+            <img src="/Web/img/alerta.png" alt=""><br><br>
+            <a href="" onclick="alert('¡Hay una alerta mi gente!')"><button>Alerta Azul</button></a>
+        </div>  
+      </section>
+
+      <h2>Habitaciones</h2>
+
+      <section class="quirofanos">
+        <div class="tarjeta">
+          <img src="/Web/img/habitacion.png" alt=""><br>
+          <span>Habitación N°</span><br>
+          <a href="/Web/secciones/pacientes.html"><button>Ingresar</button></a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="/Web/img/habitacion.png" alt=""><br>
+        <span>Habitación N°</span><br>
+        <a href="/Web/secciones/pacientes.html"><button>Ingresar</button></a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="/Web/img/habitacion.png" alt=""><br>
+        <span>Habitación N°</span><br>
+        <a href="/Web/secciones/pacientes.html"><button>Ingresar</button></a>
+      </div>
+
+      <div class="tarjeta">
+        <img src="/Web/img/habitacion.png" alt=""><br>
+        <span>Habitación N°</span><br>
+        <a href="/Web/secciones/pacientes.html"><button>Ingresar</button></a>
+      </div>
+
+      </section>
+
+      <h2>Ambulancias</h2>
+
+      <section class="ambulancias">
+        <div class="tarjeta">
+          <img src="/Web/img/ambulancia.png" alt=""><br>
+          <span>Ambulancia X</span><br>
+          <a href="/Web/secciones/quirofano.html"><button>Ingresar</button></a>
         </div>
 
         <div class="tarjeta">
-          <img src="img/medico.png" alt=""><br>
-          <span>Médico</span><br>
-          <a href="secciones/login.html"><button>Ingresar</button></a>
-      </div>
-
-      <div class="tarjeta">
-        <img src="img/personal-traslado.png" alt=""><br>
-        <span>Traslados</span><br>
-        <a href="secciones/login.html"><button>Ingresar</button></a>
-    </div>
-
-      <div class="tarjeta">
-        <img src="img/admin.png" alt=""><br>
-        <span>Administrador</span><br>
-        <a href="secciones/login.html"><button>Ingresar</button></a>
-        <a href="secciones/admin.html"><button>NoLoginTest</button></a>
-      </div>
+          <img src="/Web/img/ambulancia.png" alt=""><br>
+          <span>Ambulancia X</span><br>
+          <a href="/Web/secciones/quirofano.html"><button>Ingresar</button></a>
+        </div>
+    
+        <div class="tarjeta">
+          <img src="/Web/img/ambulancia.png" alt=""><br>
+          <span>Ambulancia X</span><br>
+          <a href="/Web/secciones/quirofano.html"><button>Ingresar</button></a>
+        </div>
       </section>
-
 </body>
 </html>

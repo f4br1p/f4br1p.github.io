@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #1c88e0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1c88e0 0%, #4f4ff3 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1c88e0 0%, #4f4ff3 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: #ffffff;
+}
+
+table{
+  background-color: #f8f3f3;
+  color: #3f3f3f;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+.titulo{
+  width: 12em;
+  font-weight: 600;
+  padding: 0.7em;
+  text-align: center;
+  background-color: #3f3f3f;
+  color: #ffffff;
+}
+
+.fila{
+  background-color: #e2dede;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media (max-width: 600px){
+  .titulo{
+      width: 11em;
+  }
+}
+
+@media (max-width: 540px){
+  .titulo{
+      width: 10em;
+  }
+}
+
+@media (max-width: 500px){
+  .titulo{
+      width: 9em;
+  }
+}
+
+@media (max-width: 440px){
+  .titulo{
+      width: 10em;
+      font-size: small;
+  }
+}
+
+@media (max-width: 396px){
+  .titulo{
+      width: 9em;
+  }
+
+  table{
+      font-size: small;
+  }
+}
+
+@media (max-width: 370px){
+  .titulo{
+      width: 10em;
+      font-size: smaller;
+  }
+}
+
+@media (max-width: 330px){
+  .titulo{
+      width: 9em;
+      font-size: smaller;
+  }
+}
+
+@media (max-width: 300px){
+  .titulo{
+      width: 8em;
+      font-size: smaller;
+  }
+}
+
+#popup-window {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
